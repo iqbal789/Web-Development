@@ -1,0 +1,25 @@
+body{
+    background-color:rgb(143, 224, 230);
+}
+p{
+    background-color: rgb(85, 215, 255);
+}
+form{
+    background-color: rgb(198, 199, 201);
+}
+h1{
+    background-color: rgb(55, 185, 202);
+    color: aquamarine;
+}
+table, th, td{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+tr:hover{
+    background-color: aqua;
+}
+button:hover{
+    color: rgb(84, 209, 80);
+}

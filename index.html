@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning...</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 id="h1">This is Heading 1</h1>
+
+    <button type="button" onclick="document.getElementById('h1').innerHTML='Heading One'">Click this button for heading 1</button>
+
+    <h2 class="heading">This is Heading 2</h2>
+    <h3 class="heading">This is Heading 3</h3>
+
+    <button type="button" onclick="document.getElementsByClassName('heading').innerHTML='Heading'">Click this button for heading 2 and 3</button>
+
+    <p>
+      <b>This is a paragraph.</b><br />
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus
+      rerum. Vero autem sit consequuntur, totam, modi blanditiis non nemo
+      adipisci perferendis veniam amet voluptatem!
+    </p>
+    <h3>Lists</h3>
+    <div>
+      <h4>Ordered List</h4>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+    </div>
+    <div>
+      <h4>Unordered List</h4>
+      <ul>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+      </ul>
+    </div>
+
+    <!--FORM-->
+    <div>
+      <h1>
+        <b>FORM</b>
+      </h1>
+    </div>
+    <form>
+      <div>
+        <label for="username">username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+        />
+      </div>
+      <div>
+        <h3 style="color: blue">Gender</h3>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <h3 style="color: blue">Frontend Languages</h3>
+        <input type="checkbox" id="html" name="language" value="html" />
+        <label for="html">HTML</label><br />
+        <input type="checkbox" id="css" name="language" value="css" />
+        <label for="css">CSS</label><br />
+        <input
+          type="checkbox"
+          id="javascript"
+          name="language"
+          value="javascript"
+        />
+        <label for="javascript">Javascript</label><br /><br />
+        <button script type="submit" onclick="alert('Form Submitted')">Submit</button>
+      </div>
+    </form>
+
+    <!-- Tables -->
+    <div>
+      <h1><b>Tables</b></h1>
+      <table style="width: 100%;">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Program</th>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>Messi</td>
+          <td>19</td>
+          <td>Barcelona</td>
+          <td>BSCS</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Ronaldo</td>
+          <td>20</td>
+          <td>Madrid</td>
+          <td>BSSE</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Alan</td>
+          <td>21</td>
+          <td>Karachi</td>
+          <td>BBA</td>
+        </tr>
+        <tr>
+          <td>104</td>
+          <td>Alex</td>
+          <td>22</td>
+          <td id="city">Lahore</td>
+          <td>BEE</td>
+        </tr>
+      </table>
+
+      <button type="button" onclick="document.getElementById('city').innerHTML='Peshawar'">Click to change Lahore to Peshawar in a table</button>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
